@@ -1,0 +1,42 @@
+/* CUSTOM OHIF SCROLLBAR */
+.ohif-scrollbar {
+  scrollbar-color: #0944b3 transparent;
+}
+
+.ohif-scrollbar::-webkit-scrollbar {
+  @apply w-2;
+}
+
+.ohif-scrollbar::-webkit-scrollbar-track {
+  @apply rounded;
+}
+
+.ohif-scrollbar::-webkit-scrollbar-thumb {
+  @apply rounded;
+  @apply bg-primary-main;
+}
+
+.ohif-scrollbar::-webkit-scrollbar-thumb:window-inactive {
+  @apply bg-primary-main;
+}
+
+/* INVISIBLE SCROLLBAR */
+.invisible-scrollbar {
+  scrollbar-width: none;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-track {
+  @apply hidden;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-thumb {
+  @apply hidden;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-thumb:window-inactive {
+  @apply hidden;
+}
